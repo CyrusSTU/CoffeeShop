@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoffeeShop.QuickBites">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#24282b" Padding="24">
+                <Label x:Name="quickBitesTitle" Text="Quick Bites" HorizontalOptions="Center" TextColor="White" BackgroundColor="Transparent" FontSize="24"/>
+            </Frame>
+            <Frame BackgroundColor="#D89817" BorderColor="Black">
+                <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand" Padding="5">
+                    <Image Source="Bagels" HorizontalOptions="Start" HeightRequest="150" WidthRequest="150"/>
+                    <Label Text="Bagels:
+                           Freshly baked each morning.
+                           $1.50" HorizontalTextAlignment="Start" FontSize="20"></Label>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="#D89817" BorderColor="Black">
+                <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand" Padding="5">
+                    <Image Source="EggsBenedict" HorizontalOptions="Start" HeightRequest="150" WidthRequest="150"/>
+                    <Label Text="Eggs Benedict:
+                           Poached eggs over bacon and buttered toasted English muffin, topped with Hollandaise sauce.
+                           $6.50" HorizontalTextAlignment="Start" FontSize="20"></Label>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

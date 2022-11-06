@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoffeeShop.HotDrinks">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#24282b" Padding="24">
+                <Label x:Name="hotDrinksTitle" Text="Hot Drinks" HorizontalOptions="Center" TextColor="White" BackgroundColor="Transparent" FontSize="24"/>
+            </Frame>
+            <Frame BorderColor="Black" BackgroundColor="#D89817" Padding="24">
+                <Label x:Name="cafeHotCoffee" Text="Hot Coffee                            $3.25"  TextColor="Black"  FontSize="24"/>
+            </Frame>
+            <Frame BorderColor="Black" BackgroundColor="#D89817" Padding="24">
+                <Label x:Name="cafeIrishCoffee" Text="Irish Coffee                           $4.25"  TextColor="Black"  FontSize="24"/>
+            </Frame>
+            <Frame BorderColor="Black" BackgroundColor="#D89817" Padding="24">
+                <Label x:Name="cafeCaramelMacchiato" Text="Caramel Macchiato             $4.25"  TextColor="Black"  FontSize="24"/>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

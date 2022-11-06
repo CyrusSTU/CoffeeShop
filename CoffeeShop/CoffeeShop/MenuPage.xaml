@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoffeeShop.MenuPage"
+             BackgroundColor="White"
+             Title="Menu">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="Transparent" Padding="24">
+                <Image Source="JulesCafeLogo"></Image>   
+            </Frame>
+            <Frame BorderColor="Black" BackgroundColor="#D89817" Padding="24">
+                <Button x:Name="espressoButton" Text="Espresso        >"  TextColor="Black" BackgroundColor="Transparent" FontSize="24" Clicked="espressoButton_Clicked"/>
+            </Frame>
+            <Frame BorderColor="Black" BackgroundColor="#D89817" Padding="24">
+                <Button x:Name="hotdrinksButton" Text="Hot Drinks      >"  TextColor="Black" BackgroundColor="Transparent" FontSize="24" Clicked="hotdrinksButton_Clicked"/>
+            </Frame>
+            <Frame BorderColor="Black" BackgroundColor="#D89817" Padding="24">
+                <Button x:Name="colddrinksButton" Text="Cold Drinks     >" TextColor="Black" BackgroundColor="Transparent" FontSize="24" Clicked="colddrinksButton_Clicked"/>
+            </Frame>
+            <Frame BorderColor="Black" BackgroundColor="#D89817" Padding="24">
+                <Button x:Name="quickbitesButton" Text="Quick Bites     >" TextColor="Black" BackgroundColor="Transparent" FontSize="24" Clicked="quickbitesButton_Clicked"/>
+            </Frame>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

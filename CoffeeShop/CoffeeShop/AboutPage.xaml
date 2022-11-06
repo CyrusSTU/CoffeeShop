@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoffeeShop.AboutPage"
+             BackgroundColor="White"
+             Title="About">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="ImageOfCafe"></Image>
+            <Frame Padding="0" BackgroundColor="Transparent" HorizontalOptions="Start">
+            <Label x:Name="Title" Text="Jules Cafe" FontAttributes="Bold" TextColor="Black" FontSize="48"></Label>
+            </Frame>
+            <Label x:Name="Address" Text="4A Kent Street" TextColor="Black" FontSize="24"></Label>
+            <Label x:Name="District" Text="Newmarket" TextColor="Black" FontSize="24"></Label>
+            <Label x:Name="City" Text="Auckland" TextColor="Black" FontSize="24"></Label>
+            <Label x:Name="Postcode" Text="1023" TextColor="Black" FontSize="24"></Label>
+            <Frame Padding="0" BackgroundColor="Transparent" HorizontalOptions="Start">
+                <Label x:Name="phoneNumber" Text="+64 9 444 5555" TextColor="Black" FontSize="24"></Label>
+            </Frame>
+            <Label x:Name="Email" Text="info@julescafe.co.nz" TextColor="Black" FontSize="24"></Label>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Instagram"
+                  TextColor="Blue"
+                  TextDecorations="Underline">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                          CommandParameter="https://www.instagram.com/techtorium/" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Facebook"
+                  TextColor="Blue"
+                  TextDecorations="Underline">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                          CommandParameter="https://www.facebook.com/Techtorium.NZ/" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
